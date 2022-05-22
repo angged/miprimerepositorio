@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 280px;
+    width: 100%;
+    background-color: orange;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.imglogo{
+    height: 260px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.logo{
+    text-align: justify center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    float: right;
+    font-size: 25px;
+    background-color:seagreen;
+    border-style: solid;
+    border-radius: 5px;
+    min-height: 12px;
+}
+
+.nav1 ul li{
+    list-style: none;
+    display: flex;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: rgb(237, 237, 102);
+}
+
+.nav1 a:hover{
+    color:crimson;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 224, 145);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.sobrenosotros{
+    height: 400px;
+    width: 1000px;
+    margin: 50px;
+    float: left;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 300px;
+}
+
+div.imagenes{
+    height: 500px;
+    width: 700px;
+    float: right;
+    padding-top: 15px;
+}
+
+.tra{
+    color: red;
+    font-size: 28px;
+    text-align: center;
+}
+
+.ser{
+    color: red;
+    font-size: 28px;
+    text-align: center;
+}
+
+div p{
+    padding-left: 90px;
+}
+
+.img1{
+    height: 220px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+.img2{
+    height: 220px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.img3{
+    height: 300px;
+    width: 660px;
+    border-radius: 10px;
+}
+
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-style: italic;
+}
+
+.irfoo{
+    height: 50px;
+    width: 50px;
+    background-color: darkblue;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 40%;
+    border: 2px solid; 
+    color: white;
+}
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 640px){
+    
+    
+    header{  
+        height: 310px;
+        width: 100vh;
+        padding-right: 10px;
+    }
+
+    .logo{
+        display: flex;
+        width: 450px;
+    }
+
+    .nav1{
+        float:left;
+        font-size: 18px;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100%;
+    }
+
+    main .divsobrenosotros{
+        text-align: left;
+        font-size: 16px;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+
+    main .imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    .imagenes{
+        height: 200px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        float: inline-end;
+    }
+
+    .hl{
+        display: inline-block;
+    }
+}

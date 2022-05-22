@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 224, 145);;
+}
+
+header{
+    height: 30px;
+    width: 100%;
+    padding: 40px;
+    background-color: orange;
+}
+
+header .subtitulo{
+    float: left;
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    float: right;
+    font-size: 25px;
+    background-color:seagreen;
+    border-style: solid;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+.nav1 ul li{
+    list-style: none;
+    display: flex;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: rgb(237, 237, 102);
+}
+
+.nav1 a:hover{
+    color:crimson;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+main .parrafo{
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 10px;
+}
+
+main .content{
+    display: flexbox;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+    margin: 15px;
+    
+}
+
+main .content .lista{
+    display: grid;
+    grid-template-columns: repeat (3 , 600px);
+    grid-template-rows: 100px;
+    grid-template-areas: "text1 text2 text3";
+
+}
+
+.ord{
+    display: flex;
+    text-justify: auto;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-gap: 70px;
+    margin: 20px;
+    padding-right: 80px;
+    padding-left: 120px;
+}
+
+.ord .list{
+    text-align: center;
+    justify-content:space-around;
+}
+
+.list1{
+    grid-area: text1;
+}
+
+.list2{
+    grid-area: text2;
+}
+
+.list3{
+    grid-area: text3;
+}
+
+.ord .pp{
+    text-decoration: underline;
+    margin: 10px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.subtitulos{
+    display: flex;
+    align-items: flex-start;
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(3 , 600px);
+    grid-template-rows: 450px; 
+    grid-template-areas:" img1 img2 img3 ";
+    padding: 40px;
+}
+
+.subtitulos :hover{
+    transform: scale(1.10);
+    transition: all 0.7s;
+}
+
+
+.item{
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text{
+    text-align: center;
+}
+
+.item1{
+    grid-area: img1;
+    height: 450px;
+    width: 550px;
+    background-image: url(../img/maderapintada.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 2px 15px 3px;
+}
+
+.item2{
+    grid-area: img2;
+    height: 450px;
+    width: 550px;
+    background-image: url(../img/herramientas-carpintero.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 2px 15px 3px;
+}
+
+.item3{
+    grid-area: img3;
+    height: 450px;
+    width: 550px;
+    background-image: url(../img/seguridad.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 2px 15px 3px;
+}
+
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-style: italic;
+}

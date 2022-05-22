@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 224, 145);
+}
+
+header{
+    height: 30px;
+    width: 100%;
+    padding: 40px;
+    background-color: orange;
+}
+
+header .subtitulo{
+    float: left;
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    float: right;
+    font-size: 25px;
+    background-color:seagreen;
+    border-style: solid;
+    border-radius: 5px;
+    min-height: 20px;
+}
+
+.nav1 ul li{
+    list-style: none;
+    display: flex;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: rgb(237, 237, 102);
+}
+
+.nav1 a:hover{
+    color:crimson;
+}
+main{
+    height: 600px;
+    width: 100%;
+    display: flex ;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+}
+
+div.catalogo{
+    margin: 10px 20px;
+    float: left;
+    width: 550px;
+    box-shadow: 0px 4px 8px 0px black;
+    background-color:cornsilk;
+}
+
+div.catalogo .foto{
+    height: 100%;
+    height: auto;
+}
+
+div.catalogo:hover{
+    border: 1px solid;
+    box-shadow: 0px 4px 8px 0px black;
+    transform: rotate(-2deg);
+}
+
+div.piecat{
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+}
+
+div.piecat a{
+    text-decoration: none;
+    color:dodgerblue;
+    text-shadow: 0px 0px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 6px 8px 0px;
+    
+}
+
+div.piecat :hover{
+    color:indigo;
+}
+
+.img1{
+    height: 430px;
+    width: 550px;
+}
+.img2{
+    height: 430px;
+    width: 550px;
+}
+.img3{
+    height: 430px;
+    width: 550px;
+}
+.img4{
+    height: 430px;
+    width: 550px;
+}
+
+footer{
+    font-style: italic;
+    height: 100px;
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
