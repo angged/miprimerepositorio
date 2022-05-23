@@ -84,7 +84,7 @@ main .contenido{
     border: solid 2px black;
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 14px;
 }
 
 
