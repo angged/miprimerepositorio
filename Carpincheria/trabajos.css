@@ -77,14 +77,16 @@ main .contenido{
                         " img4 img5 img5 "
     ;
     border-radius: 10px;
-    grid-gap: 15px;
+    grid-gap: 5px;
 }
 
 .item{
     border: solid 2px black;
     display: flex;
     justify-content: space-between;
+    border-radius: 15px;
 }
+
 
 .item1{
     grid-area: img1;
@@ -93,6 +95,8 @@ main .contenido{
     background-size: cover;
     height: auto;
     width: auto;
+    transform: scale(0.9);
+    transition: all 0.7s;
 }
 
 .item2{
@@ -100,6 +104,8 @@ main .contenido{
     background-image:url(../img/mesita.jpg) ;
     background-position: center;
     background-size: cover;
+    transform: scale(0.9);
+    transition: all 0.7s;
 }
 
 .item3{
@@ -107,6 +113,8 @@ main .contenido{
     background-image: url(../img/mueble.jpg);
     background-position: center;
     background-size: cover;
+    transform: scale(0.9);
+    transition: all 0.7s;
 }
 
 .item4{
@@ -116,6 +124,8 @@ main .contenido{
     background-size: cover;
     height: auto;
     width: auto;
+    transform: scale(0.9);
+    transition: all 0.7s;
 }
 
 .item5{
@@ -125,6 +135,8 @@ main .contenido{
     background-size: cover;
     height: auto;
     width: auto;
+    transform: scale(0.9);
+    transition: all 0.7s;
 }
 
 .work{
