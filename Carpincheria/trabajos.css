@@ -115,6 +115,7 @@ main .contenido{
     background-size: cover;
     transform: scale(0.9);
     transition: all 0.7s;
+    transform: rotate(1deg);
 }
 
 .item4{
