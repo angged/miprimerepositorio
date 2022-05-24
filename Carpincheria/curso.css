@@ -77,7 +77,8 @@ main .content .lista{
     grid-template-columns: repeat (3 , 600px);
     grid-template-rows: 100px;
     grid-template-areas: "text1 text2 text3";
-
+    text-transform: uppercase;
+    text-shadow: 4px 4px 30px;
 }
 
 .ord{
