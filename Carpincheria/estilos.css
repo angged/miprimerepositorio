@@ -31,34 +31,25 @@ header{
 }
 
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    float: right;
-    font-size: 25px;
+header .container-fluid{
     background-color:seagreen;
-    border-style: solid;
-    border-radius: 5px;
-    min-height: 12px;
-}
-
-.nav1 ul li{
-    list-style: none;
+    border-radius: 15px;
     display: flex;
-    display: inline-block;
-    margin-right: 12px;
+    margin-top: 60px;
+    margin-right: 50px;
 }
 
-.nav1 a{
-    text-decoration: none;
+nav{
+    width: 900px;
+    display: flex;
+    float:right;
+    justify-content:space-between;
+}
+
+.container-fluid a{
     color: rgb(237, 237, 102);
 }
 
-.nav1 a:hover{
-    color:crimson;
-}
 
 main{
     height: 100vh;
