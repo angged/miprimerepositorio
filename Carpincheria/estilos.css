@@ -37,6 +37,7 @@ header .container-fluid{
     display: flex;
     margin-top: 60px;
     margin-right: 50px;
+    border: solid 2px rgb(237, 237, 102);
 }
 
 nav{
@@ -46,68 +47,77 @@ nav{
     justify-content:space-between;
 }
 
+
 .container-fluid a{
     color: rgb(237, 237, 102);
 }
 
-
 main{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(255, 224, 145);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-div.sobrenosotros{
-    height: 400px;
-    width: 1000px;
-    margin: 50px;
-    float: left;
-    font-size: 18px;
+    height: 1000px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    min-width: 300px;
 }
 
-div.imagenes{
-    height: 500px;
-    width: 700px;
-    float: right;
-    padding-top: 15px;
-}
 
-.tra{
-    color: red;
-    font-size: 28px;
+.ladoizquierdo{
+    background-color: rgb(255, 224, 145);
     text-align: center;
+    height: 1000px;
+    padding-top: 30px;
+    justify-content: space-between;
 }
 
-.ser{
-    color: red;
-    font-size: 28px;
-    text-align: center;
+h2{
+    color: rgb(205, 28, 28);
+    font-style: italic;
+    font-size: 40px;
 }
 
-div p{
-    padding-left: 90px;
+.text1{
+    height: 450px;
+    margin-top: 90px;
+    margin-left: 40px;
+    margin-right: 10px;
 }
 
-.img1{
-    height: 220px;
-    width: 340px;
-    border-radius: 10px;
+.text2{
+    height: 450px;
+    margin-left: 40px;
+    margin-right: 10px;
 }
 
-.img2{
-    height: 220px;
-    width: 320px;
-    border-radius: 10px;
+.ladoderecho{
+    background-color:  rgb(255, 224, 145);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: repeat(3 , 320px);
+    grid-template-areas:" img1" 
+                        " img2"
+                        " img3";
 }
 
-.img3{
+.item1{
+    grid-area: img1;
     height: 300px;
-    width: 660px;
+    width: 800px;
     border-radius: 10px;
+    box-shadow: 2px 2px 16px 4px;
+}
+
+.item2{
+    grid-area: img2;
+    height: 300px;
+    width: 850px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 16px 4px;
+}
+
+.item3{
+    grid-area: img3;
+    height: 300px;
+    width: 830px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 16px 4px;
 }
 
 
@@ -140,8 +150,15 @@ footer{
     color: white;
 }
 
+footer a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
 
-
+footer a :hover{
+    color: rgb(184, 171, 171);
+}
 
 @media only screen and (min-width: 480px) and (max-width: 640px){
     
