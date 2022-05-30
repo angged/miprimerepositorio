@@ -15,7 +15,7 @@ body{
 header{
     height: 30px;
     width: 100%;
-    padding: 40px;
+    padding: 60px;
     background-color: orange;
 }
 
@@ -24,127 +24,87 @@ header .subtitulo{
     color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    font-size: 2rem;
 }
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    float: right;
-    font-size: 25px;
+header .container-fluid{
     background-color:seagreen;
-    border-style: solid;
-    border-radius: 5px;
-    min-height: 20px;
-}
-
-.nav1 ul li{
-    list-style: none;
+    border-radius: 15px;
     display: flex;
-    display: inline-block;
-    margin-right: 12px;
+    margin-right: 50px;
+    border: solid 2px rgb(237, 237, 102);
 }
 
-.nav1 a{
-    text-decoration: none;
+nav{
+    width: 529px;
+    display: flex;
+    float:right;
+    justify-content:space-between;
+}
+
+
+.container-fluid a{
     color: rgb(237, 237, 102);
 }
 
-.nav1 a:hover{
-    color:crimson;
-}
-
-main{
-    min-height: (100vh);
-    width: 100%;
-}
-
-
-
-main .contenido{
-    min-height: 1000px;
-    width: 1500px;
+.row{
     padding: 10px;
-    margin: 10px;
-    
-    display: grid;
-    grid-template-columns: repeat(3 , 600px);
-    grid-template-rows: 800px 700px 700px 700px;
-    grid-template-areas:" vid vid vid "
-                        " img3 img3 img2 "
-                        " img4 img1 img1 "
-                        " img4 img5 img5 "
-    ;
+    margin: 5px;
+}
+
+.col{
+    padding: 15px;
+}
+
+
+
+.img1{
+    height: 300px;
+    width: 400px;
     border-radius: 10px;
-    grid-gap: 5px;
+    border: solid black 2px;
 }
 
-.item{
-    border: solid 2px black;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 14px;
+.col :hover{
+    transform: scale(1.05)
 }
 
-
-.item1{
-    grid-area: img1;
-    background-image: url(../img/cajones.jpg);
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    width: auto;
-    transform: scale(0.9);
-    transition: all 0.7s;
+.img2{
+    height: 380px;
+    width: 500px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img3{
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img4{
+    height: 600px;
+    width: 1200px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img5{
+    height: 570px;
+    width: 800px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img6{
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    border: solid black 2px;
 }
 
-.item2{
-    grid-area: img2;
-    background-image:url(../img/mesita.jpg) ;
-    background-position: center;
-    background-size: cover;
-    transform: scale(0.9);
-    transition: all 0.7s;
-}
-
-.item3{
-    grid-area: img3;
-    background-image: url(../img/mueble.jpg);
-    background-position: center;
-    background-size: cover;
-    transform: scale(0.9);
-    transition: all 0.7s;
-    transform: rotate(1deg);
-}
-
-.item4{
-    grid-area: img4;
-    background-image: url(../img/estante.jpg);
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    width: auto;
-    transform: scale(0.9);
-    transition: all 0.7s;
-}
-
-.item5{
-    grid-area: img5;
-    background-image: url(../img/maderaymetal.jpg);
-    background-position: center;
-    background-size: cover;
-    height: auto;
-    width: auto;
-    transform: scale(0.9);
-    transition: all 0.7s;
-}
-
-.work{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: -20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.texto{
+    margin: 40px;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer{
@@ -174,4 +134,14 @@ footer{
     border-radius: 40%;
     border: 2px solid; 
     color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+footer a :hover{
+    color: rgb(184, 171, 171);
 }
