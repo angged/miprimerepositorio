@@ -9,9 +9,9 @@ body{
 }
 
 header{
-    height: 30px;
+    height: 50px;
     width: 100%;
-    padding: 40px;
+    padding: 60px;
     background-color: orange;
 }
 
@@ -20,43 +20,35 @@ header .subtitulo{
     color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    font-size: 2rem;
 }
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    float: right;
-    font-size: 25px;
+header .container-fluid{
     background-color:seagreen;
-    border-style: solid;
-    border-radius: 5px;
-    min-height: 20px;
-}
-
-.nav1 ul li{
-    list-style: none;
+    border-radius: 15px;
     display: flex;
-    display: inline-block;
-    margin-right: 12px;
+    margin-right: 50px;
+    border: solid 2px rgb(237, 237, 102);
 }
 
-.nav1 a{
-    text-decoration: none;
+nav{
+    width: 529px;
+    display: flex;
+    float:right;
+    justify-content:space-between;
+}
+
+
+.container-fluid a{
     color: rgb(237, 237, 102);
 }
 
-.nav1 a:hover{
-    color:crimson;
-}
 main{
-    height: 600px;
+    height: 100vh;
     width: 100%;
-    display: flex ;
-    justify-content: space-around;
-    margin: auto;
     padding: 10px;
+    background-color:rgb(255, 224, 145);
+    height: 100%;
 }
 
 div.catalogo{
@@ -64,7 +56,7 @@ div.catalogo{
     float: left;
     width: 550px;
     box-shadow: 0px 4px 8px 0px black;
-    background-color:cornsilk;
+    background-color:whitesmoke;
 }
 
 div.catalogo .foto{
@@ -90,12 +82,12 @@ div.piecat a{
     text-shadow: 0px 0px 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 0px 6px 8px 0px;
-    
 }
 
 div.piecat :hover{
-    color:indigo;
+    color:black;
 }
+
 
 .img1{
     height: 430px;
@@ -115,7 +107,6 @@ div.piecat :hover{
 }
 
 footer{
-    font-style: italic;
     height: 100px;
     width: 100%;
     background-color: cornflowerblue;
@@ -123,6 +114,17 @@ footer{
     font-size: 30px;
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 30px;
+    font-style: italic;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+footer a :hover{
+    color: rgb(184, 171, 171);
 }
