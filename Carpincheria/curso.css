@@ -11,7 +11,7 @@ body{
 header{
     height: 30px;
     width: 100%;
-    padding: 40px;
+    padding: 60px;
     background-color: orange;
 }
 
@@ -20,35 +20,27 @@ header .subtitulo{
     color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    font-size: 2rem;
 }
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    float: right;
-    font-size: 25px;
+header .container-fluid{
     background-color:seagreen;
-    border-style: solid;
-    border-radius: 5px;
-    min-height: 20px;
-}
-
-.nav1 ul li{
-    list-style: none;
+    border-radius: 15px;
     display: flex;
-    display: inline-block;
-    margin-right: 12px;
+    margin-right: 50px;
+    border: solid 2px rgb(237, 237, 102);
 }
 
-.nav1 a{
-    text-decoration: none;
+nav{
+    width: 529px;
+    display: flex;
+    float:right;
+    justify-content:space-between;
+}
+
+
+.container-fluid a{
     color: rgb(237, 237, 102);
-}
-
-.nav1 a:hover{
-    color:crimson;
 }
 
 main{
@@ -63,119 +55,65 @@ main .parrafo{
     margin: 10px;
 }
 
-main .content{
-    display: flexbox;
-    flex-direction: column;
-    padding: 30px;
-    justify-content: space-around;
-    margin: 15px;
-    
+.row{
+    padding: 10px;
+    margin: 30px;
 }
 
-main .content .lista{
-    display: grid;
-    grid-template-columns: repeat (3 , 600px);
-    grid-template-rows: 100px;
-    grid-template-areas: "text1 text2 text3";
-    text-transform: uppercase;
-    text-shadow: 4px 4px 30px;
-}
-
-.ord{
-    display: flex;
-    text-justify: auto;
-    font-size: 20px;
-    list-style-type: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    grid-gap: 70px;
-    margin: 20px;
-    padding-right: 80px;
-    padding-left: 120px;
-}
-
-.ord .list{
+.text1{
     text-align: center;
-    justify-content:space-around;
+    padding: 10px;
+    font-size: 22px;
 }
 
-.list1{
-    grid-area: text1;
+.text2{
+    font-size: 22px;
 }
 
-.list2{
-    grid-area: text2;
+.text3{
+    font-size: 22px;
 }
 
-.list3{
-    grid-area: text3;
+.col{
+    height: 50px;
+    width: 700px;
 }
 
-.ord .pp{
+.container2{
+    align-items: center;
+}
+
+.container2 :hover{
+    transform: scale(1.02);
+}
+
+.imgx{
+    border-radius: 10px;
+    border-style:dashed;
+}
+
+
+.img1{
+    height: 350px;
+    width: 500px;
+    margin-left: 20px;
+}
+.img2{
+    height: 350px;
+    width: 500px;
+    margin-left: 20px;
+}
+.img3{
+    height: 350px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+span{
     text-decoration: underline;
-    margin: 10px;
+    text-transform: uppercase;
     font-style: italic;
-    font-size: 30px;
 }
-
-.subtitulos{
-    display: flex;
-    align-items: flex-start;
-    float: left;
-    display: grid;
-    grid-template-columns: repeat(3 , 600px);
-    grid-template-rows: 450px; 
-    grid-template-areas:" img1 img2 img3 ";
-    padding: 40px;
-}
-
-.subtitulos :hover{
-    transform: scale(1.10);
-    transition: all 0.7s;
-}
-
-
-.item{
-    
-    display: flex;
-    justify-content: space-between;
-    font-size: 19px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.text{
-    text-align: center;
-}
-
-.item1{
-    grid-area: img1;
-    height: 450px;
-    width: 550px;
-    background-image: url(../img/maderapintada.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 2px 15px 3px;
-}
-
-.item2{
-    grid-area: img2;
-    height: 450px;
-    width: 550px;
-    background-image: url(../img/herramientas-carpintero.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 2px 15px 3px;
-}
-
-.item3{
-    grid-area: img3;
-    height: 450px;
-    width: 550px;
-    background-image: url(../img/seguridad.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 2px 15px 3px;
-}
-
 
 footer{
     height: 100px;
@@ -185,7 +123,17 @@ footer{
     font-size: 30px;
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 30px;
     font-style: italic;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+footer a :hover{
+    color: rgb(184, 171, 171);
 }
