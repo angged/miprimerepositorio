@@ -11,7 +11,7 @@ body{
 header{
     height: 30px;
     width: 100%;
-    padding: 40px;
+    padding: 60px;
     background-color: orange;
 }
 
@@ -20,35 +20,27 @@ header .subtitulo{
     color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    font-size: 2rem;
 }
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    float: right;
-    font-size: 25px;
+header .container-fluid{
     background-color:seagreen;
-    border-style: solid;
-    border-radius: 5px;
-    min-height: 20px;
-}
-
-.nav1 ul li{
-    list-style: none;
+    border-radius: 15px;
     display: flex;
-    display: inline-block;
-    margin-right: 12px;
+    margin-right: 50px;
+    border: solid 2px rgb(237, 237, 102);
 }
 
-.nav1 a{
-    text-decoration: none;
+nav{
+    width: 529px;
+    display: flex;
+    float:right;
+    justify-content:space-between;
+}
+
+
+.container-fluid a{
     color: rgb(237, 237, 102);
-}
-
-.nav1 a:hover{
-    color:crimson;
 }
 
 main{
@@ -58,6 +50,15 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.ubi{
+    border-radius: 10px;
+}
+
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 main .formu{
@@ -70,15 +71,8 @@ main .formu .datos.parr{
     text-align: justify;
 }
 
-main .datos{
-    height: 100px;
-    display: flex;
-    text-align: center;
-    justify-content:space-between;
-    flex-direction: column;
-    padding: 20px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+.datos{
+    background-color: rgba(0, 0, 0, 0.484);
 }
 
 main .formu .squarew{
@@ -90,17 +84,6 @@ main .formu .squarew{
 .formu .datos .parr .subr{
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .squarew .ENVIAR{
     background-color: rgb(51, 151, 51);
@@ -168,4 +151,30 @@ footer{
     justify-content: space-around;
     padding: 30px;
     font-style: italic;
+}
+
+.irfoo{
+    height: 50px;
+    width: 50px;
+    background-color: darkblue;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-shadow: 0px 0px 15px black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 40%;
+    border: 2px solid; 
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+footer a :hover{
+    color: rgb(184, 171, 171);
 }
