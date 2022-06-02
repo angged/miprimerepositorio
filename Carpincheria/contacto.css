@@ -90,6 +90,10 @@ main .formu .squarew{
     color: white;
 }
 
+.squarew p{
+    font-style: oblique;
+}
+
 div.ubi{
     margin: 10px 20px;
     float: left;
