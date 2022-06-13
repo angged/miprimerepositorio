@@ -42,22 +42,23 @@ main{
     .piecat :hover{
         color:black;
     }
+
+    @mixin imgs {
+        height: 430px;
+        width: 550px;
+    }
     
     .img1{
-        height: 430px;
-        width: 550px;
+        @include imgs()
     }
     .img2{
-        height: 430px;
-        width: 550px;
+        @include imgs()
     }
     .img3{
-        height: 430px;
-        width: 550px;
+        @include imgs()
     }
     .img4{
-        height: 430px;
-        width: 550px;
+        @include imgs()
     }
     
 }
