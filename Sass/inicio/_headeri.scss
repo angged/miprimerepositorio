@@ -1,0 +1,35 @@
+header{
+    height: 280px;
+    width: 100%;
+    background-color: orange;
+    font-size: 35px;
+    padding: 20px;
+
+    .imglogo{
+        height: 260px;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        float: left;
+    }
+
+    nav{
+        width: 980px;
+        display: flex;
+        float:right;
+        justify-content:space-between;
+
+        .container-fluid{
+            background-color:seagreen;
+            border-radius: 15px;
+            display: flex;
+            margin-right: 50px;
+            border: solid 2px rgb(237, 237, 102);
+
+        
+        }
+        .container-fluid a{
+            color: rgb(237, 237, 102);
+        }
+    }
+}

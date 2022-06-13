@@ -1,119 +1,95 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-header{
+header {
   height: 280px;
   width: 100%;
   background-color: orange;
   font-size: 35px;
   padding: 20px;
 }
-
-.imglogo{
+header .imglogo {
   height: 260px;
   width: 500px;
   display: flex;
   flex-direction: row;
   float: left;
 }
-
-.logo{
-  text-align: justify center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;
+header nav {
+  width: 980px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
 }
-
-
-header .container-fluid{
-  background-color:seagreen;
+header nav .container-fluid {
+  background-color: seagreen;
   border-radius: 15px;
   display: flex;
-  margin-top: 60px;
   margin-right: 50px;
   border: solid 2px rgb(237, 237, 102);
 }
-
-nav{
-  width: 980px;
-  display: flex;
-  float:right;
-  justify-content:space-between;
-}
-
-
-.container-fluid a{
+header nav .container-fluid a {
   color: rgb(237, 237, 102);
 }
 
-main{
+main {
   height: 1000px;
   width: 1891px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-
-.ladoizquierdo{
+main .ladoizquierdo {
   background-color: rgb(255, 224, 145);
   text-align: center;
   height: 1000px;
   padding-top: 30px;
   justify-content: space-between;
 }
-
-h2{
+main .ladoizquierdo h2 {
   color: rgb(205, 28, 28);
   font-style: italic;
   font-size: 40px;
 }
-
-.text1{
+main .ladoizquierdo .text1 {
   height: 450px;
   margin-top: 90px;
   margin-left: 40px;
   margin-right: 10px;
 }
-
-.text2{
+main .ladoizquierdo .text2 {
   height: 450px;
   margin-left: 40px;
   margin-right: 10px;
 }
-
-.ladoderecho{
-  background-color:  rgb(255, 224, 145);
+main .ladoderecho {
+  background-color: rgb(255, 224, 145);
   padding: 20px;
   display: grid;
   grid-template-columns: 450px;
-  grid-template-rows: repeat(3 , 320px);
-  grid-template-areas:" img1" 
-                      " img2"
-                      " img3";
+  grid-template-rows: repeat(3, 320px);
+  grid-template-areas: " img1" " img2" " img3";
 }
-
-.item1{
+main .item1 {
   grid-area: img1;
   height: 300px;
   width: 800px;
   border-radius: 10px;
   box-shadow: 2px 2px 16px 4px;
 }
-
-.item2{
+main .item2 {
   grid-area: img2;
   height: 300px;
   width: 850px;
   border-radius: 10px;
   box-shadow: 2px 2px 16px 4px;
 }
-
-.item3{
+main .item3 {
   grid-area: img3;
   height: 300px;
   width: 830px;
@@ -121,8 +97,7 @@ h2{
   box-shadow: 2px 2px 16px 4px;
 }
 
-
-footer{
+footer {
   height: 100px;
   width: 100%;
   background-color: cornflowerblue;
@@ -134,8 +109,16 @@ footer{
   padding: 30px;
   font-style: italic;
 }
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 17);
+}
 
-.irfoo{
+.irfoo {
   height: 50px;
   width: 50px;
   background-color: darkblue;
@@ -147,16 +130,8 @@ footer{
   line-height: 50px;
   font-size: 25px;
   border-radius: 40%;
-  border: 2px solid; 
+  border: 2px solid;
   color: white;
 }
 
-footer a{
-  text-decoration: none;
-  color: black;
-  text-decoration: underline;
-}
-
-footer a :hover{
-  color: rgb(184, 171, 171);
-}
+/*# sourceMappingURL=inicio.css.map */
