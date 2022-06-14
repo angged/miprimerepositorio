@@ -1,0 +1,86 @@
+main{
+    min-height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .ubi{
+        border-radius: 10px;
+        margin: 10px 20px;
+        float: left;
+        width: 550px;
+        box-shadow: 0px 4px 8px 0px black;
+        background-color:green;
+
+        .ubi:hover{
+            border: 1px solid;
+            box-shadow: 0px 4px 8px 0px black;
+            transform: rotate(-2deg);
+        }    
+
+        .foto{
+            height: 100%;
+            height: auto;
+            .img1{
+                height: 430px;
+                width: 550px;
+            }
+            img{
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+
+        .piecat{
+            text-align: center;
+            padding: 10px;
+            font-size: 36px;
+        
+            a{
+                text-decoration: none;
+                color:aliceblue;
+                text-shadow: 0px 0px 2px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-shadow: 0px 6px 8px 0px;
+                
+            }
+            
+            .piecat :hover{
+                color:indigo;
+            }
+    }
+
+    .formu{
+        width: 900px;
+        border: 1px solid black;
+        justify-content: center;
+
+    .squarew{
+        display: flex;
+        justify-content: center;
+        padding: 250px;
+
+        p{
+            font-style: oblique;
+        }
+        
+        .ENVIAR{
+            background-color: rgb(51, 151, 51);
+            color: white;
+        }
+        }
+        }
+    }
+
+    .datos{
+        background-color: rgba(0, 0, 0, 0.484);
+        .parr{
+            text-align: justify;
+            .subr{
+                text-decoration: underline;
+            }
+        }
+    }
+}

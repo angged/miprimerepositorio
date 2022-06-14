@@ -1,0 +1,58 @@
+.row{
+    padding: 10px;
+    margin: 5px;
+}
+
+.col{
+    padding: 15px;
+}
+
+
+.img1{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+.col :hover{
+    transform: scale(1.05)
+}
+
+.img2{
+    height: 380px;
+    width: 500px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img3{
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img4{
+    height: 600px;
+    width: 1200px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img5{
+    height: 570px;
+    width: 800px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+.img6{
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    border: solid black 2px;
+}
+
+.texto{
+    margin: 40px;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

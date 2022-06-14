@@ -1,0 +1,37 @@
+header{
+    height: 50px;
+    width: 100%;
+    padding: 100px;
+    background-color: orange;
+
+    .subtitulo{
+        float: left;
+        color: rgb(255, 0, 0);
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+    
+    .container-fluid{
+        background-color:seagreen;
+        border-radius: 15px;
+        display: flex;
+        margin-right: 50px;
+        border: solid 2px rgb(237, 237, 102);
+    }
+    
+    nav{
+        width: 529px;
+        display: flex;
+        float:right;
+        justify-content:space-between;
+    }
+    
+    .container-fluid a{
+        color: rgb(237, 237, 102);
+    }
+}
+
+
+
+

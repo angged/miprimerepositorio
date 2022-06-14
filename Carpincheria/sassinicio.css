@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 280px;
+  width: 100%;
+  background-color: orange;
+  font-size: 35px;
+  padding: 20px;
+}
+header .imglogo {
+  height: 260px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+header nav {
+  width: 980px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+header nav .container-fluid {
+  background-color: seagreen;
+  border-radius: 15px;
+  display: flex;
+  margin-right: 50px;
+  border: solid 2px rgb(237, 237, 102);
+}
+header nav .container-fluid a {
+  color: rgb(237, 237, 102);
+}
+
+main {
+  height: 1000px;
+  width: 1891px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .ladoizquierdo {
+  background-color: rgb(255, 224, 145);
+  text-align: center;
+  height: 1000px;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+main .ladoizquierdo h2 {
+  color: rgb(205, 28, 28);
+  font-style: italic;
+  font-size: 40px;
+}
+main .ladoizquierdo .text1 {
+  height: 450px;
+  margin-top: 90px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+main .ladoizquierdo .text2 {
+  height: 450px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+main .ladoderecho {
+  background-color: rgb(255, 224, 145);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: repeat(3, 320px);
+  grid-template-areas: " img1" " img2" " img3";
+}
+main .item1 {
+  grid-area: img1;
+  height: 300px;
+  width: 800px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 16px 4px;
+}
+main .item2 {
+  grid-area: img2;
+  height: 300px;
+  width: 850px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 16px 4px;
+}
+main .item3 {
+  grid-area: img3;
+  height: 300px;
+  width: 830px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 16px 4px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 17);
+}
+
+.irfoo {
+  height: 50px;
+  width: 50px;
+  background-color: darkblue;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0px 0px 15px black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 40%;
+  border: 2px solid;
+  color: white;
+}/*# sourceMappingURL=sassinicio.css.map */
