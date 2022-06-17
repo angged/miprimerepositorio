@@ -2,7 +2,6 @@ header{
     height: 280px;
     width: 100%;
     background-color: orange;
-    font-size: 35px;
     padding: 20px;
 
     .imglogo{
@@ -13,23 +12,49 @@ header{
         float: left;
     }
 
+    .container-fluid{
+        background-color:seagreen;
+        border-radius: 15px;
+        display: flex;
+        margin-right: 50px;
+        border: solid 2px rgb(237, 237, 102);
+        font-size: 1rem;
+    }
+    
     nav{
-        width: 980px;
+        width: 529px;
         display: flex;
         float:right;
         justify-content:space-between;
+    }
+    
+    .container-fluid a{
+        color: rgb(237, 237, 102);
+    }
+}
 
-        .container-fluid{
-            background-color:seagreen;
-            border-radius: 15px;
-            display: flex;
-            margin-right: 50px;
-            border: solid 2px rgb(237, 237, 102);
+@media only screen and (max-width: 1120px) and (min-width: 575px ){
+    
+    header{
+        height: 380px;
 
-        
+        .imglogo{
+            margin-left: 50px;
         }
-        .container-fluid a{
-            color: rgb(237, 237, 102);
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    header{
+        height: 300px;
+
+        .imglogo{
+            height: 150px;
+            width: 250px;
+        }
+
+        nav{
+            width: 300px;
         }
     }
 }

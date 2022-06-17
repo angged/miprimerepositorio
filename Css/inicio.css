@@ -12,7 +12,6 @@ header {
   height: 280px;
   width: 100%;
   background-color: orange;
-  font-size: 35px;
   padding: 20px;
 }
 header .imglogo {
@@ -22,81 +21,101 @@ header .imglogo {
   flex-direction: row;
   float: left;
 }
-header nav {
-  width: 980px;
-  display: flex;
-  float: right;
-  justify-content: space-between;
-}
-header nav .container-fluid {
+header .container-fluid {
   background-color: seagreen;
   border-radius: 15px;
   display: flex;
   margin-right: 50px;
   border: solid 2px rgb(237, 237, 102);
+  font-size: 1rem;
 }
-header nav .container-fluid a {
+header nav {
+  width: 529px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+header .container-fluid a {
   color: rgb(237, 237, 102);
 }
 
+@media only screen and (max-width: 1120px) and (min-width: 575px) {
+  header {
+    height: 380px;
+  }
+  header .imglogo {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  header {
+    height: 300px;
+  }
+  header .imglogo {
+    height: 150px;
+    width: 250px;
+  }
+  header nav {
+    width: 300px;
+  }
+}
 main {
-  height: 1000px;
-  width: 1891px;
+  height: auto;
+  width: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-main .ladoizquierdo {
+main .datos .scroll {
   background-color: rgb(255, 224, 145);
   text-align: center;
+  justify-content: center;
   height: 1000px;
-  padding-top: 30px;
-  justify-content: space-between;
 }
-main .ladoizquierdo h2 {
+main .datos h2 {
   color: rgb(205, 28, 28);
   font-style: italic;
   font-size: 40px;
 }
-main .ladoizquierdo .text1 {
+main .datos .text1 {
   height: 450px;
-  margin-top: 90px;
-  margin-left: 40px;
-  margin-right: 10px;
+  background-image: url(/img/taller.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 80px;
+  color: ghostwhite;
 }
-main .ladoizquierdo .text2 {
+main .datos .text1 p {
+  text-shadow: black 2px 2px 1px;
+  display: flex;
+  text-align: center;
+}
+main .datos .text2 {
   height: 450px;
-  margin-left: 40px;
-  margin-right: 10px;
+  background-image: url(/img/carpintero2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 80px;
+  color: ghostwhite;
 }
-main .ladoderecho {
-  background-color: rgb(255, 224, 145);
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 450px;
-  grid-template-rows: repeat(3, 320px);
-  grid-template-areas: " img1" " img2" " img3";
-}
-main .item1 {
-  grid-area: img1;
-  height: 300px;
-  width: 800px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 16px 4px;
-}
-main .item2 {
-  grid-area: img2;
-  height: 300px;
-  width: 850px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 16px 4px;
-}
-main .item3 {
-  grid-area: img3;
-  height: 300px;
-  width: 830px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 16px 4px;
+main .datos .text2 p {
+  text-shadow: black 2px 2px 1px;
+  display: flex;
+  text-align: center;
 }
 
+@media screen and (max-width: 835px) {
+  main .text1,
+main .text2 {
+    height: 600px;
+  }
+}
 footer {
   height: 100px;
   width: 100%;

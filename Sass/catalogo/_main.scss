@@ -6,6 +6,10 @@ main{
     height: 100%;
 
 
+    .container{
+        display: flex;
+    }
+
     .catalogo{
         margin: 10px 20px;
         float: left;
@@ -61,4 +65,12 @@ main{
         @include imgs()
     }
     
+}
+
+@media only screen and (max-width:690px){
+
+    .foto{
+        height: 280px;
+        width: 350px;
+    }
 }

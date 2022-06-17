@@ -20,5 +20,16 @@ footer{
         color: rgb(184, 171, 171);
     }
     
+}
 
+@media only screen and (max-width:548px){
+    footer{
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 366px){
+    footer{
+        height: 170px;
+    }
 }

@@ -84,3 +84,20 @@ main{
         }
     }
 }
+
+@media only screen and (max-width:1475px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .foto{
+        display: none;
+    }
+    
+    .ubi{
+        width: 200px;
+    }
+}
