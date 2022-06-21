@@ -1,10 +1,10 @@
-header{
+.Ht{
     min-height: 50px;
     width: 100%;
     padding: 90px;
     background-color: orange;
 
-    .subtitulo{
+    .subtitulo1{
         float: left;
         font-size: 2rem;
     }
@@ -30,14 +30,14 @@ header{
 }
 
 @media only screen and (max-width:985px){
-    header{
+    .Ht{
         display: flex;
         flex-direction: column;
     }
 }
 
 @media only screen and (max-width:630px){
-    header{
+    .Ht{
         nav{
             width: 300px;
         }
@@ -45,7 +45,7 @@ header{
 }
 
 @media only screen and (max-width:528px){
-    header{
+    .Ht{
         min-height: 70px; 
     }
 }

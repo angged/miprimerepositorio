@@ -1,68 +1,68 @@
-main{
-    height: 100vh;
+.maincursos{
+    height: 1300px;
     width: 100%;
 
-    .parrafo{
+    .parrafocursos{
         padding: 20px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 18px;
         margin: 10px;
     }
-    
-    .row{
-        padding: 10px;
-        margin: 30px;
-    }
-    
-    .text1{
-        text-align: center;
-        padding: 10px;
-        font-size: 22px;
-    }
-    
-    .text2{
-        font-size: 22px;
-    }
-    
-    .text3{
-        font-size: 22px;
-    }
-    
-    .col{
-        height: 50px;
-        width: 700px;
-    }
-    
-    .container2{
+
+    .content1{
+        display: flex;
         align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 20px;
     }
-    
-    .container2 :hover{
-        transform: scale(1.02);
+
+    .parrafo1{
+        padding-right: 40px;
+        padding-left: 40px;
     }
-    
-    .imgx{
+
+    .content2{
+        @extend .content1
+    }
+
+    .parrafo2{
+        @extend .parrafo1
+    }
+
+    .content3{
+        @extend .content1
+    }
+
+    .parrafo3{
+        @extend .parrafo1
+    }
+
+    .imagenx{
         border-radius: 10px;
-        border-style:dashed;
+        border: solid 2px;
     }
     
-    .img1{
+    .imagen1{
         height: 350px;
         width: 500px;
         margin-left: 20px;
+        
     }
-    .img2{
-        @extend .img1;
+    .imagen2{
+        @extend .imagen1;
     }
-    .img3{
-        @extend .img1;
+    .imagen3{
+        @extend .imagen1;
     }
     
     span{
         text-decoration: underline;
         text-transform: uppercase;
         font-style: italic;
+        font-size: 20px;
     }
+    
 }
 
 .t1{

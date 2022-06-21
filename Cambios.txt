@@ -1,0 +1,13 @@
+
+Cambie los "title" de mis paginas 
+
+Agregue las "description" a cada pagina
+
+Agregue "keywords" que veia necesarias, en cada pagina
+
+Utilice "extend" en imagenes de la parte "cursos" 
+
+Coloque "mixin" en la parte de "catalogos"
+
+
+Cambio en Inicio + Responsives

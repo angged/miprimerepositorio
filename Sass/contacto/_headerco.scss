@@ -1,10 +1,10 @@
-header{
+.Hcont{
     height: 30px;
     width: 100%;
     padding: 100px;
     background-color: orange;
 
-    .subtitulo{
+    .subtitulo4{
         float: left;
         border-radius: 5px;
         font-size: 2rem;
@@ -31,13 +31,13 @@ header{
 }
 
 @media only screen and (max-width:1100px){
-    header{
+    .Hco{
         height: 60px;
     }
 }
 
 @media only screen and (max-width:640px){
-    header{
+    .Hco{
         nav{
             width: 300px;
         }
@@ -45,7 +45,7 @@ header{
 }
 
 @media only screen  and (max-width:400px){
-    header{
+    .Hco{
         nav{
             width: 250px;
         }

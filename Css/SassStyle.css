@@ -1,0 +1,743 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 280px;
+  width: 100%;
+  background-color: orange;
+  padding: 20px;
+}
+header .imglogo {
+  height: 260px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+header .container-fluid {
+  background-color: seagreen;
+  border-radius: 15px;
+  display: flex;
+  margin-right: 50px;
+  border: solid 2px rgb(237, 237, 102);
+  font-size: 1rem;
+}
+header nav {
+  width: 529px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+header .container-fluid a {
+  color: rgb(237, 237, 102);
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 575px) {
+  header {
+    height: 380px;
+  }
+  header .imglogo {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  header {
+    height: 300px;
+  }
+  header .imglogo {
+    height: 150px;
+    width: 250px;
+  }
+  header nav {
+    width: 300px;
+  }
+}
+main {
+  height: auto;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+main .datos .scroll {
+  background-color: rgb(255, 224, 145);
+  text-align: center;
+  justify-content: center;
+  height: 1000px;
+}
+main .datos h2 {
+  color: rgb(205, 28, 28);
+  font-style: italic;
+  font-size: 40px;
+}
+main .datos .text1 {
+  height: 450px;
+  background-image: url(/img/taller.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 80px;
+  color: ghostwhite;
+}
+main .datos .text1 p {
+  text-shadow: black 2px 2px 1px;
+  display: flex;
+  text-align: center;
+}
+main .datos .text2 {
+  height: 450px;
+  background-image: url(/img/carpintero2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 80px;
+  color: ghostwhite;
+}
+main .datos .text2 p {
+  text-shadow: black 2px 2px 1px;
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (max-width: 835px) {
+  main .text1,
+main .text2 {
+    height: 600px;
+  }
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 17);
+}
+
+.irfoo {
+  height: 50px;
+  width: 50px;
+  background-color: darkblue;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0px 0px 15px black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 40%;
+  border: 2px solid;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 224, 145);
+}
+
+.Ht {
+  min-height: 50px;
+  width: 100%;
+  padding: 90px;
+  background-color: orange;
+}
+.Ht .subtitulo1 {
+  float: left;
+  font-size: 2rem;
+}
+.Ht .container-fluid {
+  background-color: seagreen;
+  border-radius: 15px;
+  display: flex;
+  margin-right: 50px;
+  border: solid 2px rgb(237, 237, 102);
+}
+.Ht nav {
+  width: 529px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+.Ht .container-fluid a {
+  color: rgb(237, 237, 102);
+}
+
+@media only screen and (max-width: 985px) {
+  .Ht {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .Ht nav {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 528px) {
+  .Ht {
+    min-height: 70px;
+  }
+}
+.mainwork .columnaswork {
+  padding: 10px;
+  margin: 5px;
+}
+.mainwork .colwork {
+  padding: 15px;
+}
+.mainwork .imgen1 {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.mainwork .colwork :hover {
+  transform: scale(1.05);
+}
+.mainwork .imgen2 {
+  height: 380px;
+  width: 500px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.mainwork .imgen3 {
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.mainwork .imgen4 {
+  height: 600px;
+  width: 1200px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.mainwork .imgen5 {
+  height: 570px;
+  width: 800px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+.mainwork .imgen6 {
+  height: 550px;
+  width: 400px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+.textotra {
+  margin: 40px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .imgen4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .imgen5 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .imgen2 {
+    display: none;
+  }
+  .imgen1 {
+    width: 250px;
+  }
+  .imgen6 {
+    width: 250px;
+  }
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 171);
+}
+
+.irfoo {
+  height: 50px;
+  width: 50px;
+  background-color: darkblue;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0px 0px 15px black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 40%;
+  border: 2px solid;
+  color: white;
+}
+
+@media only screen and (max-width: 548px) and (min-width: 365px) {
+  footer {
+    height: 140px;
+  }
+}
+@media only screen and (max-width: 364px) {
+  footer {
+    height: 180px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 224, 145);
+}
+
+.Hc {
+  min-height: 50px;
+  width: 100%;
+  padding: 100px;
+  background-color: orange;
+}
+.Hc .subtitulo2 {
+  float: left;
+  font-size: 2rem;
+}
+.Hc .container-fluid {
+  background-color: seagreen;
+  border-radius: 15px;
+  display: flex;
+  margin-right: 50px;
+  border: solid 2px rgb(237, 237, 102);
+}
+.Hc nav {
+  width: 529px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+.Hc .container-fluid a {
+  color: rgb(237, 237, 102);
+}
+
+@media only screen and (max-width: 1100px) {
+  .Hc {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .Hc {
+    height: 100px;
+  }
+  .Hc nav {
+    width: 300px;
+  }
+}
+.mainT {
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 224, 145);
+  height: 100%;
+}
+.mainT .container {
+  display: flex;
+}
+.mainT .catalogo {
+  margin: 10px 20px;
+  float: left;
+  width: 550px;
+  box-shadow: 0px 4px 8px 0px black;
+  background-color: whitesmoke;
+}
+.mainT .photo {
+  height: 100%;
+  height: auto;
+}
+.mainT .catalogo:hover {
+  border: 1px solid;
+  box-shadow: 0px 4px 8px 0px black;
+  transform: rotate(-2deg);
+}
+.mainT .piecatt {
+  text-align: center;
+  padding: 10px;
+  font-size: 36px;
+}
+.mainT .piecatt a {
+  text-decoration: none;
+  color: dodgerblue;
+  text-shadow: 0px 0px 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 6px 8px 0px;
+}
+.mainT .piecatt :hover {
+  color: black;
+}
+.mainT .imag1 {
+  height: 430px;
+  width: 550px;
+}
+.mainT .imag2 {
+  height: 430px;
+  width: 550px;
+}
+.mainT .imag3 {
+  height: 430px;
+  width: 550px;
+}
+.mainT .imag4 {
+  height: 430px;
+  width: 550px;
+}
+
+@media only screen and (max-width: 690px) {
+  .photo {
+    height: 280px;
+    width: 350px;
+  }
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 171);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 224, 145);
+}
+
+.Hcont {
+  height: 30px;
+  width: 100%;
+  padding: 100px;
+  background-color: orange;
+}
+.Hcont .subtitulo4 {
+  float: left;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+.Hcont nav {
+  width: 529px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+.Hcont nav .container-fluid {
+  background-color: seagreen;
+  border-radius: 15px;
+  display: flex;
+  margin-right: 50px;
+  border: solid 2px rgb(237, 237, 102);
+}
+.Hcont nav .container-fluid a {
+  color: rgb(237, 237, 102);
+}
+
+@media only screen and (max-width: 1100px) {
+  .Hco {
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .Hco nav {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Hco nav {
+    width: 250px;
+  }
+}
+.maincon {
+  min-height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.maincon .ubi {
+  border-radius: 10px;
+  margin: 10px 20px;
+  float: left;
+  width: 550px;
+  box-shadow: 0px 4px 8px 0px black;
+  background-color: green;
+}
+.maincon .ubi .ubi:hover {
+  border: 1px solid;
+  box-shadow: 0px 4px 8px 0px black;
+  transform: rotate(-2deg);
+}
+.maincon .ubi .foto {
+  height: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.maincon .ubi .foto .img1 {
+  height: 430px;
+  width: 550px;
+}
+.maincon .ubi .piecat {
+  text-align: center;
+  padding: 10px;
+  font-size: 36px;
+}
+.maincon .ubi .piecat a {
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: 0px 0px 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 6px 8px 0px;
+}
+.maincon .ubi .piecat .piecat :hover {
+  color: indigo;
+}
+.maincon .ubi .formu {
+  width: 900px;
+  border: 1px solid black;
+  justify-content: center;
+}
+.maincon .ubi .formu .squarew {
+  display: flex;
+  justify-content: center;
+  padding: 250px;
+}
+.maincon .ubi .formu .squarew p {
+  font-style: oblique;
+}
+.maincon .ubi .formu .squarew .ENVIAR {
+  background-color: rgb(51, 151, 51);
+  color: white;
+}
+.maincon .datoscontacto {
+  background-color: rgba(0, 0, 0, 0.484);
+}
+.maincon .datoscontacto .parr {
+  text-align: justify;
+}
+.maincon .datoscontacto .parr .subr {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1475px) {
+  .mainco {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .foto {
+    display: none;
+  }
+  .ubi {
+    width: 200px;
+  }
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 171);
+}
+
+@media only screen and (max-width: 548px) {
+  footer {
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 366px) {
+  footer {
+    height: 170px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 224, 145);
+}
+
+.Hcu {
+  height: 30px;
+  width: 100%;
+  padding: 100px;
+  background-color: orange;
+}
+.Hcu .subtitulo5 {
+  float: left;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+.Hcu nav {
+  width: 529px;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
+.Hcu nav .container-fluid {
+  background-color: seagreen;
+  border-radius: 15px;
+  display: flex;
+  margin-right: 50px;
+  border: solid 2px rgb(237, 237, 102);
+}
+.Hcu nav .container-fluid a {
+  color: rgb(237, 237, 102);
+}
+
+.maincursos {
+  height: 1300px;
+  width: 100%;
+}
+.maincursos .parrafocursos {
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 10px;
+}
+.maincursos .content1, .maincursos .content3, .maincursos .content2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.maincursos .parrafo1, .maincursos .parrafo3, .maincursos .parrafo2 {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.maincursos .imagenx {
+  border-radius: 10px;
+  border: solid 2px;
+}
+.maincursos .imagen1, .maincursos .imagen3, .maincursos .imagen2 {
+  height: 350px;
+  width: 500px;
+  margin-left: 20px;
+}
+.maincursos span {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.t1 {
+  text-align: center;
+  font-size: large;
+  font-size: x-large;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-style: italic;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline;
+}
+footer a :hover {
+  color: rgb(184, 171, 17);
+}
+
+/*# sourceMappingURL=SassStyle.css.map */

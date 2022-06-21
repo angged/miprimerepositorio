@@ -1,85 +1,87 @@
-.row{
-    padding: 10px;
-    margin: 5px;
+
+.mainwork{
+    .columnaswork{
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .colwork{
+        padding: 15px;
+    }
+
+
+    .imgen1{
+        height: 300px;
+        width: 400px;
+        border-radius: 10px;
+        border: solid black 2px;
+    }
+
+    .colwork :hover{
+        transform: scale(1.05)
+    }
+
+    .imgen2{
+        height: 380px;
+        width: 500px;
+        border-radius: 10px;
+        border: solid black 2px;
+    }
+    .imgen3{
+        height: 350px;
+        width: 250px;
+        border-radius: 10px;
+        border: solid black 2px;
+    }
+    .imgen4{
+        height: 600px;
+        width: 1200px;
+        border-radius: 10px;
+        border: solid black 2px;
+    }
+    .imgen5{
+        height: 570px;
+        width: 800px;
+        border-radius: 10px;
+        border: solid black 2px;
+    }
+    .imgen6{
+        height: 550px;
+        width: 400px;
+        border-radius: 10px;
+        border: solid black 2px;
+    }
 }
 
-.col{
-    padding: 15px;
-}
-
-
-.img1{
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-
-.col :hover{
-    transform: scale(1.05)
-}
-
-.img2{
-    height: 380px;
-    width: 500px;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-.img3{
-    height: 350px;
-    width: 250px;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-.img4{
-    height: 600px;
-    width: 1200px;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-.img5{
-    height: 570px;
-    width: 800px;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-.img6{
-    height: 550px;
-    width: 400px;
-    border-radius: 10px;
-    border: solid black 2px;
-}
-
-.texto{
+.textotra{
     margin: 40px;
     padding: 30px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 @media only screen and (max-width:1200px){
-    .img4{
+    .imgen4{
         display: none;
     }
 }
 
 @media only screen and (max-width:990px){
-    .img5{
+    .imgen5{
         display: none;
     }
 }
 
 @media only screen and (max-width:550px){
-    .img2{
+    .imgen2{
         display: none;
     }
 
-    .img1{
+    .imgen1{
         width: 250px;
     }
 
-    .img6{
+    .imgen6{
         width: 250px;
     }
 }

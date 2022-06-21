@@ -1,4 +1,4 @@
-main{
+.maincon{
     min-height: 1000px;
     width: 100%;
     display: flex;
@@ -23,13 +23,11 @@ main{
         .foto{
             height: 100%;
             height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             .img1{
                 height: 430px;
                 width: 550px;
-            }
-            img{
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
             }
         }
 
@@ -74,7 +72,7 @@ main{
         }
     }
 
-    .datos{
+    .datoscontacto{
         background-color: rgba(0, 0, 0, 0.484);
         .parr{
             text-align: justify;
@@ -86,7 +84,7 @@ main{
 }
 
 @media only screen and (max-width:1475px){
-    main{
+    .mainco{
         display: flex;
         flex-direction: column;
     }
