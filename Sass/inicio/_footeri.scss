@@ -1,4 +1,4 @@
-footer{
+.footerinicio{
     height: 100px;
     width: 100%;
     background-color: cornflowerblue;
@@ -35,4 +35,16 @@ footer{
     border-radius: 40%;
     border: 2px solid; 
     color: white;
+}
+
+@media screen and (max-width:548px) and (min-width:365px){
+    .footerinicio{
+        height: 140px;
+    }
+}
+
+@media screen and (max-width:364px){
+    .footerinicio{
+        height: 180px;
+    }
 }

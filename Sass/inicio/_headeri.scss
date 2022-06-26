@@ -44,7 +44,7 @@ header{
     }
 }
 
-@media only screen and (max-width: 574px) {
+@media only screen and (max-width: 574px) and (min-width:321px) {
     header{
         height: 300px;
 
@@ -55,6 +55,19 @@ header{
 
         nav{
             width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    header{
+        nav{
+            width: 200px;
+        }
+
+        .imglogo{
+            height: 120px;
+            width: 180px;
         }
     }
 }

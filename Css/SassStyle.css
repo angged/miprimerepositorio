@@ -47,7 +47,7 @@ header .container-fluid a {
     margin-left: 50px;
   }
 }
-@media only screen and (max-width: 574px) {
+@media only screen and (max-width: 574px) and (min-width: 321px) {
   header {
     height: 300px;
   }
@@ -59,23 +59,32 @@ header .container-fluid a {
     width: 300px;
   }
 }
-main {
+@media only screen and (max-width: 320px) {
+  header nav {
+    width: 200px;
+  }
+  header .imglogo {
+    height: 120px;
+    width: 180px;
+  }
+}
+.maininicio {
   height: auto;
   width: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-main .datos .scroll {
+.maininicio .datos .scroll {
   background-color: rgb(255, 224, 145);
   text-align: center;
   justify-content: center;
   height: 1000px;
 }
-main .datos h2 {
+.maininicio .datos h2 {
   color: rgb(205, 28, 28);
   font-style: italic;
   font-size: 40px;
 }
-main .datos .text1 {
+.maininicio .datos .text1 {
   height: 450px;
   background-image: url(/img/taller.jpg);
   background-attachment: fixed;
@@ -86,12 +95,12 @@ main .datos .text1 {
   padding-top: 80px;
   color: ghostwhite;
 }
-main .datos .text1 p {
+.maininicio .datos .text1 p {
   text-shadow: black 2px 2px 1px;
   display: flex;
   text-align: center;
 }
-main .datos .text2 {
+.maininicio .datos .text2 {
   height: 450px;
   background-image: url(/img/carpintero2.jpg);
   background-attachment: fixed;
@@ -104,19 +113,53 @@ main .datos .text2 {
   padding-top: 80px;
   color: ghostwhite;
 }
-main .datos .text2 p {
+.maininicio .datos .text2 p {
   text-shadow: black 2px 2px 1px;
   display: flex;
   text-align: center;
 }
 
-@media screen and (max-width: 835px) {
-  main .text1,
-main .text2 {
-    height: 600px;
+@media screen and (max-width: 875px) and (min-width: 600px) {
+  .maininicio .datos .text1,
+.maininicio .datos .text2 {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
   }
 }
-footer {
+@media screen and (max-width: 600px) and (min-width: 440px) {
+  .maininicio .datos .text1,
+.maininicio .datos .text2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+  }
+}
+@media screen and (max-width: 440px) and (min-width: 350px) {
+  .maininicio {
+    height: 1300px;
+  }
+  .maininicio .datos .text1,
+.maininicio .datos .text2 {
+    height: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 349px) {
+  .maininicio {
+    height: 1650px;
+  }
+  .maininicio .datos .text1,
+.maininicio .datos .text2 {
+    height: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+}
+.footerinicio {
   height: 100px;
   width: 100%;
   background-color: cornflowerblue;
@@ -128,12 +171,12 @@ footer {
   padding: 30px;
   font-style: italic;
 }
-footer a {
+.footerinicio a {
   text-decoration: none;
   color: black;
   text-decoration: underline;
 }
-footer a :hover {
+.footerinicio a :hover {
   color: rgb(184, 171, 17);
 }
 
@@ -153,6 +196,16 @@ footer a :hover {
   color: white;
 }
 
+@media screen and (max-width: 548px) and (min-width: 365px) {
+  .footerinicio {
+    height: 140px;
+  }
+}
+@media screen and (max-width: 364px) {
+  .footerinicio {
+    height: 180px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

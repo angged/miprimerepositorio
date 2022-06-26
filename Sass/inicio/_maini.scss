@@ -1,4 +1,4 @@
-main{
+.maininicio{
     height: auto;
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -55,12 +55,60 @@ main{
     }
 }
 
-@media screen and (max-width: 835px){
-    main{
-        .text1,
-        .text2{
-            height: 600px;
+@media screen and (max-width: 875px) and (min-width:600px){
+    .maininicio{
+        .datos{
+            .text1,
+            .text2{
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:440px){
+    .maininicio{
+        .datos{
+            .text1,
+            .text2{
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 1px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) and (min-width:350px){
+    .maininicio{
+        .datos{
+            .text1,
+            .text2{
+                height: 600px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+            }
         }
 
+        height: 1300px;
+    }
+}
+
+@media screen and (max-width:349px){
+    .maininicio{
+        .datos{
+            .text1,
+            .text2{
+                height: 800px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+            }
+        }
+
+        height: 1650px;
     }
 }
