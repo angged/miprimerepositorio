@@ -1,5 +1,5 @@
 .maincon{
-    min-height: 1000px;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -31,7 +31,7 @@
             }
         }
 
-        .piecat{
+        .piecont{
             text-align: center;
             padding: 10px;
             font-size: 36px;
@@ -55,20 +55,20 @@
         border: 1px solid black;
         justify-content: center;
 
-    .squarew{
-        display: flex;
-        justify-content: center;
-        padding: 250px;
-
-        p{
-            font-style: oblique;
-        }
+        .squarew{
+            display: flex;
+            justify-content: center;
+            padding: 250px;
+                p{
+                    font-style: oblique;
+                }
         
-        .ENVIAR{
-            background-color: rgb(51, 151, 51);
-            color: white;
-        }
-        }
+        
+            .ENVIAR{
+                background-color: rgb(51, 151, 51);
+                color: white;
+                }
+            }
         }
     }
 
@@ -84,18 +84,76 @@
 }
 
 @media only screen and (max-width:1475px){
-    .mainco{
+    .maincon{
         display: flex;
         flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: auto;
+        .squarew{
+            p{
+                padding-top: 40px;
+                font-style: oblique;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 560px){
-    .foto{
-        display: none;
-    }
+    .maincon{
+        .foto{
+            display: none;
+        }
     
-    .ubi{
-        width: 200px;
+        .ubi{
+            width: 320px;
+        }
     }
 }
+
+@media only screen and (max-width:430px){
+    .maincon{
+        justify-content: flex-start;
+        .squarew{
+            font-size: 12px;
+            
+        }
+        .ubi{
+            width: 140px;
+            padding: 10px;
+            .piecont{
+            font-size: 18px;
+            }
+        }
+
+        .datoscontacto{
+            h2,
+            h4{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    .maincon{
+        .squarew{
+            font-size: 10px;
+        }
+        .ubi{
+            width: 140px;
+            .piecont{
+            font-size: 16px;
+            }
+        }
+
+        .datoscontacto{
+            h2,
+            h4{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+

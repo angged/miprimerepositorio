@@ -225,6 +225,8 @@ body {
   width: 100%;
   padding: 90px;
   background-color: orange;
+  display: flex;
+  justify-content: space-around;
 }
 .Ht .subtitulo1 {
   float: left;
@@ -258,9 +260,14 @@ body {
     width: 300px;
   }
 }
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 528px) and (min-width: 391px) {
   .Ht {
     min-height: 70px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .Ht nav {
+    padding-right: 40px;
   }
 }
 .mainwork .columnaswork {
@@ -317,28 +324,68 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width: 1200px) {
-  .imgen4 {
-    display: none;
+@media only screen and (max-width: 1290px) {
+  .mainwork .imgen4 {
+    height: 400px;
+    width: 800px;
   }
 }
-@media only screen and (max-width: 990px) {
-  .imgen5 {
+@media only screen and (max-width: 915px) {
+  .mainwork .imgen4 {
+    height: 350px;
+    width: 570px;
+  }
+  .mainwork .imgen5 {
+    height: 320px;
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .mainwork .imgen4 {
     display: none;
+  }
+  .mainwork .imgen5 {
+    height: 280px;
+    width: 470px;
   }
 }
 @media only screen and (max-width: 550px) {
   .imgen2 {
     display: none;
   }
-  .imgen1 {
-    width: 250px;
-  }
-  .imgen6 {
-    width: 250px;
+}
+@media only screen and (max-width: 485px) {
+  .mainwork .imgen5 {
+    display: none;
   }
 }
-footer {
+@media only screen and (max-width: 444px) {
+  .mainwork {
+    flex-direction: column;
+  }
+  .mainwork .imgen1 {
+    width: 250px;
+    height: 250px;
+  }
+  .mainwork .imgen6 {
+    width: 300px;
+    height: 450px;
+  }
+  .mainwork .imgen3 {
+    width: 200px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .mainwork {
+    align-content: flex-start;
+  }
+  .mainwork .imgen6 {
+    width: 250px;
+    height: 400px;
+  }
+}
+.footerwork {
   height: 100px;
   width: 100%;
   background-color: cornflowerblue;
@@ -350,12 +397,12 @@ footer {
   padding: 30px;
   font-style: italic;
 }
-footer a {
+.footerwork a {
   text-decoration: none;
   color: black;
   text-decoration: underline;
 }
-footer a :hover {
+.footerwork a :hover {
   color: rgb(184, 171, 171);
 }
 
@@ -375,13 +422,18 @@ footer a :hover {
   color: white;
 }
 
+@media only screen and (max-width: 992px) and (min-width: 549px) {
+  .footerwork {
+    height: 120px;
+  }
+}
 @media only screen and (max-width: 548px) and (min-width: 365px) {
-  footer {
+  .footerwork {
     height: 140px;
   }
 }
 @media only screen and (max-width: 364px) {
-  footer {
+  .footerwork {
     height: 180px;
   }
 }
@@ -408,7 +460,6 @@ body {
 .Hc .container-fluid {
   background-color: seagreen;
   border-radius: 15px;
-  display: flex;
   margin-right: 50px;
   border: solid 2px rgb(237, 237, 102);
 }
@@ -427,12 +478,35 @@ body {
     height: 80px;
   }
 }
-@media only screen and (max-width: 630px) {
-  .Hc {
-    height: 100px;
+@media only screen and (max-width: 648px) {
+  .Hc .subtitulo2 {
+    font-size: 22px;
   }
+}
+@media only screen and (max-width: 630px) {
   .Hc nav {
     width: 300px;
+  }
+}
+@media only screen and (max-width: 508px) {
+  .Hc {
+    padding: 80px;
+    padding-bottom: 140px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Hc nav {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .Hc nav {
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 315px) {
+  .Hc .subtitulo2 {
+    padding-right: 60px;
   }
 }
 .mainT {
@@ -493,13 +567,105 @@ body {
   width: 550px;
 }
 
-@media only screen and (max-width: 690px) {
-  .photo {
-    height: 280px;
-    width: 350px;
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .mainT .imag1 {
+    height: 300px;
+    width: 430px;
+  }
+  .mainT .imag2 {
+    height: 300px;
+    width: 430px;
+  }
+  .mainT .imag3 {
+    height: 300px;
+    width: 430px;
+  }
+  .mainT .imag4 {
+    height: 300px;
+    width: 430px;
+  }
+  .mainT .catalogo {
+    width: 430px;
   }
 }
-footer {
+@media only screen and (max-width: 991px) and (min-width: 425px) {
+  .mainT .imag1 {
+    height: 300px;
+    width: 350px;
+  }
+  .mainT .imag2 {
+    height: 300px;
+    width: 350px;
+  }
+  .mainT .imag3 {
+    height: 300px;
+    width: 350px;
+  }
+  .mainT .imag4 {
+    height: 300px;
+    width: 350px;
+  }
+  .mainT .catalogo {
+    width: 350px;
+  }
+  .mainT .piecatt {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .mainT .imag1 {
+    height: 170px;
+    width: 270px;
+  }
+  .mainT .imag2 {
+    height: 170px;
+    width: 270px;
+  }
+  .mainT .imag3 {
+    height: 170px;
+    width: 270px;
+  }
+  .mainT .imag4 {
+    height: 170px;
+    width: 270px;
+  }
+  .mainT .catalogo {
+    width: 270px;
+  }
+  .mainT .piecatt {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .mainT {
+    padding: 2px;
+  }
+}
+@media only screen and (max-width: 336px) {
+  .mainT .imag1 {
+    height: 110px;
+    width: 170px;
+  }
+  .mainT .imag2 {
+    height: 110px;
+    width: 170px;
+  }
+  .mainT .imag3 {
+    height: 110px;
+    width: 170px;
+  }
+  .mainT .imag4 {
+    height: 110px;
+    width: 170px;
+  }
+  .mainT .catalogo {
+    width: 170px;
+  }
+  .mainT .piecatt {
+    font-size: 14px;
+  }
+}
+.footercatalogo {
   height: 100px;
   width: 100%;
   background-color: cornflowerblue;
@@ -511,15 +677,26 @@ footer {
   padding: 30px;
   font-style: italic;
 }
-footer a {
+.footercatalogo a {
   text-decoration: none;
   color: black;
   text-decoration: underline;
 }
-footer a :hover {
+.footercatalogo a :hover {
   color: rgb(184, 171, 171);
 }
 
+@media only screen and (max-width: 548px) {
+  .footercatalogo {
+    height: 80px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 364px) {
+  .footercatalogo {
+    height: 80px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -559,22 +736,50 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
-  .Hco {
+  .Hcont {
     height: 60px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .Hco nav {
+  .Hcont {
+    padding: 110px;
+  }
+  .Hcont nav {
     width: 300px;
   }
+  .Hcont .subtitulo4 {
+    font-size: 22px;
+  }
 }
-@media only screen and (max-width: 400px) {
-  .Hco nav {
+@media only screen and (max-width: 440px) {
+  .Hcont {
+    padding-left: 70px;
+  }
+  .Hcont .subtitulo4 {
+    font-size: 22px;
+  }
+  .Hcont nav {
     width: 250px;
   }
 }
+@media only screen and (max-width: 390px) {
+  .Hcont nav {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .Hcont {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .Hcont {
+    padding: 40px;
+    padding-bottom: 120px;
+  }
+}
 .maincon {
-  min-height: 1000px;
+  height: 1000px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -604,19 +809,19 @@ body {
   height: 430px;
   width: 550px;
 }
-.maincon .ubi .piecat {
+.maincon .ubi .piecont {
   text-align: center;
   padding: 10px;
   font-size: 36px;
 }
-.maincon .ubi .piecat a {
+.maincon .ubi .piecont a {
   text-decoration: none;
   color: aliceblue;
   text-shadow: 0px 0px 2px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 0px 6px 8px 0px;
 }
-.maincon .ubi .piecat .piecat :hover {
+.maincon .ubi .piecont .piecat :hover {
   color: indigo;
 }
 .maincon .ubi .formu {
@@ -647,20 +852,61 @@ body {
 }
 
 @media only screen and (max-width: 1475px) {
-  .mainco {
+  .maincon {
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: auto;
+  }
+  .maincon .squarew p {
+    padding-top: 40px;
+    font-style: oblique;
   }
 }
 @media only screen and (max-width: 560px) {
-  .foto {
+  .maincon .foto {
     display: none;
   }
-  .ubi {
-    width: 200px;
+  .maincon .ubi {
+    width: 320px;
   }
 }
-footer {
+@media only screen and (max-width: 430px) {
+  .maincon {
+    justify-content: flex-start;
+  }
+  .maincon .squarew {
+    font-size: 12px;
+  }
+  .maincon .ubi {
+    width: 140px;
+    padding: 10px;
+  }
+  .maincon .ubi .piecont {
+    font-size: 18px;
+  }
+  .maincon .datoscontacto h2,
+.maincon .datoscontacto h4 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .maincon .squarew {
+    font-size: 10px;
+  }
+  .maincon .ubi {
+    width: 140px;
+  }
+  .maincon .ubi .piecont {
+    font-size: 16px;
+  }
+  .maincon .datoscontacto h2,
+.maincon .datoscontacto h4 {
+    font-size: 14px;
+  }
+}
+.footercontacto {
   height: 100px;
   width: 100%;
   background-color: cornflowerblue;
@@ -672,22 +918,22 @@ footer {
   padding: 30px;
   font-style: italic;
 }
-footer a {
+.footercontacto a {
   text-decoration: none;
   color: black;
   text-decoration: underline;
 }
-footer a :hover {
+.footercontacto a :hover {
   color: rgb(184, 171, 171);
 }
 
 @media only screen and (max-width: 548px) {
-  footer {
+  .footercontacto {
     height: 120px;
   }
 }
 @media only screen and (max-width: 366px) {
-  footer {
+  .footercontacto {
     height: 170px;
   }
 }
@@ -729,8 +975,49 @@ body {
   color: rgb(237, 237, 102);
 }
 
+@media only screen and (max-width: 1310px) {
+  .Hcu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 774px) {
+  .Hcu {
+    padding: 140px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .Hcu nav {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 566px) {
+  .Hcu .subtitulo5 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Hcu .subtitulo5 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 438px) {
+  .Hcu {
+    padding: 60px;
+    padding-bottom: 140px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .Hcu {
+    padding: 50px;
+    padding-bottom: 160px;
+  }
+  .Hcu nav {
+    width: 200px;
+  }
+}
 .maincursos {
-  height: 1300px;
+  height: auto;
   width: 100%;
 }
 .maincursos .parrafocursos {
@@ -739,7 +1026,7 @@ body {
   font-size: 18px;
   margin: 10px;
 }
-.maincursos .content1, .maincursos .content3, .maincursos .content2 {
+.maincursos .content1 {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -749,6 +1036,20 @@ body {
 .maincursos .parrafo1, .maincursos .parrafo3, .maincursos .parrafo2 {
   padding-right: 40px;
   padding-left: 40px;
+}
+.maincursos .content2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.maincursos .content3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 .maincursos .imagenx {
   border-radius: 10px;
@@ -765,15 +1066,80 @@ body {
   font-style: italic;
   font-size: 20px;
 }
-
-.t1 {
+.maincursos .t1 {
   text-align: center;
   font-size: large;
   font-size: x-large;
 }
 
+@media only screen and (max-width: 1040px) {
+  .maincursos .imagenx {
+    border-radius: 10px;
+    border: solid 2px;
+  }
+  .maincursos .imagen1, .maincursos .imagen2, .maincursos .imagen3 {
+    height: 280px;
+    width: 430px;
+    margin-left: 20px;
+  }
+  .maincursos .imagen2 {
+    border-radius: 10px;
+    border: solid 2px;
+  }
+  .maincursos .imagen3 {
+    border-radius: 10px;
+    border: solid 2px;
+  }
+  .maincursos .parrafo1, .maincursos .parrafo2, .maincursos .parrafo3 {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+  .maincursos .parrafo2 {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+  .maincursos .parrafo3 {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+  .maincursos .t1 {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 966px) {
+  .maincursos .content1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .maincursos .content2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .maincursos .content3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .maincursos .imagenx {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 465px) {
+  .maincursos .imagenx {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .maincursos .imagenx {
+    height: 150px;
+    width: 220px;
+  }
+}
 footer {
-  height: 100px;
+  height: auto;
   width: 100%;
   background-color: cornflowerblue;
   text-align: center;
@@ -790,7 +1156,7 @@ footer a {
   text-decoration: underline;
 }
 footer a :hover {
-  color: rgb(184, 171, 17);
+  color: rgb(227, 15, 15);
 }
 
 /*# sourceMappingURL=SassStyle.css.map */

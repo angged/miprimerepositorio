@@ -3,6 +3,8 @@
     width: 100%;
     padding: 90px;
     background-color: orange;
+    display: flex;
+    justify-content: space-around;
 
     .subtitulo1{
         float: left;
@@ -44,8 +46,16 @@
     }
 }
 
-@media only screen and (max-width:528px){
+@media only screen and (max-width:528px) and (min-width:391px){
     .Ht{
         min-height: 70px; 
+    }
+}
+
+@media only screen and (max-width:390px){
+    .Ht{
+        nav{
+            padding-right:40px;
+        }
     }
 }

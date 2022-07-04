@@ -1,5 +1,5 @@
 .maincursos{
-    height: 1300px;
+    height: auto;
     width: 100%;
 
     .parrafocursos{
@@ -9,7 +9,7 @@
         margin: 10px;
     }
 
-    .content1{
+        .content1{
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
@@ -23,19 +23,27 @@
     }
 
     .content2{
-        @extend .content1
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 20px;
     }
 
     .parrafo2{
-        @extend .parrafo1
+        @extend .parrafo1;
     }
 
     .content3{
-        @extend .content1
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 20px;
     }
 
     .parrafo3{
-        @extend .parrafo1
+        @extend .parrafo1;
     }
 
     .imagenx{
@@ -62,11 +70,98 @@
         font-style: italic;
         font-size: 20px;
     }
+    .t1{
+        text-align: center;
+        font-size: large;
+        font-size: x-large;
+    }
+}
+
+
+
+@media only screen and (max-width:1040px){
+    .maincursos{
+        .imagenx{
+            border-radius: 10px;
+            border: solid 2px;
+        }
+        
+        .imagen1{
+            height: 280px;
+            width: 430px;
+            margin-left: 20px;
+        }
+
+        .imagen2{
+            border-radius: 10px;
+            border: solid 2px;
+        }
+        .imagen3{
+            border-radius: 10px;
+            border: solid 2px;
+        }
+    
+        .parrafo1{
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+    
+        .parrafo2{
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+    
+        .parrafo3{
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+        .t1{
+            padding-top: 20px;
+        }
+    }
     
 }
 
-.t1{
-    text-align: center;
-    font-size: large;
-    font-size: x-large;
+@media only screen and (max-width:966px){
+    .maincursos{
+        .content1{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content3{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imagenx{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:465px){
+    .maincursos{
+        .imagenx{
+            height: 200px;
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width:350px){
+    .maincursos{
+        .imagenx{
+            height: 150px;
+            width: 220px;
+        }
+    }
 }

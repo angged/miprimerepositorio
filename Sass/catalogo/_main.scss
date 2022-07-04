@@ -67,10 +67,120 @@
     
 }
 
-@media only screen and (max-width:690px){
+@media only screen and (max-width:1200px) and (min-width:992px) {
+    .mainT{
+        @mixin imgs {
+            height: 300px;
+            width: 430px;
+        }
+        .imag1{
+            @include imgs()
+        }
+        .imag2{
+            @include imgs()
+        }
+        .imag3{
+            @include imgs()
+        }
+        .imag4{
+            @include imgs()
+        }
+        
+        .catalogo{
+            width: 430px;
+        }
+    }
+}
 
-    .photo{
-        height: 280px;
-        width: 350px;
+@media only screen and (max-width:991px) and (min-width:425px){
+    .mainT{
+        @mixin imgs {
+            height: 300px;
+            width: 350px;
+        }
+        .imag1{
+            @include imgs()
+        }
+        .imag2{
+            @include imgs()
+        }
+        .imag3{
+            @include imgs()
+        }
+        .imag4{
+            @include imgs()
+        }
+        
+        .catalogo{
+            width: 350px;
+        }
+
+        .piecatt{
+            font-size: 22px;
+        }
+    }
+}
+
+@media only screen and (max-width:424px){
+    .mainT{
+        @mixin imgs {
+            height: 170px;
+            width: 270px;
+        }
+        .imag1{
+            @include imgs()
+        }
+        .imag2{
+            @include imgs()
+        }
+        .imag3{
+            @include imgs()
+        }
+        .imag4{
+            @include imgs()
+        }
+        
+        .catalogo{
+            width: 270px;
+        }
+
+        .piecatt{
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width:344px) {
+    .mainT{
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-width:336px){
+    .mainT{
+        @mixin imgs {
+            height: 110px;
+            width: 170px;
+        }
+        .imag1{
+            @include imgs()
+        }
+        .imag2{
+            @include imgs()
+        }
+        .imag3{
+            @include imgs()
+        }
+        .imag4{
+            @include imgs()
+        }
+        
+        .catalogo{
+            width: 170px;
+        }
+
+        .piecatt{
+            font-size: 14px;
+        }
     }
 }

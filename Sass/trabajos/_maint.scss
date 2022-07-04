@@ -60,28 +60,82 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width:1200px){
-    .imgen4{
-        display: none;
+@media only screen and (max-width:1290px){
+    .mainwork{
+        .imgen4{
+            height: 400px;
+            width: 800px;
+        }
     }
 }
 
-@media only screen and (max-width:990px){
-    .imgen5{
-        display: none;
+@media only screen and (max-width:915px){
+    .mainwork{
+        .imgen4{
+            height: 350px;
+            width: 570px;
+        }
+        .imgen5{
+            height: 320px;
+            width: 550px;
+        }
     }
 }
+
+@media only screen and (max-width:635px){
+    .mainwork{
+        .imgen4{
+            display: none;
+        }
+        .imgen5{
+            height: 280px;
+            width: 470px;
+        }
+    }
+}
+
+
 
 @media only screen and (max-width:550px){
     .imgen2{
         display: none;
     }
+}
 
-    .imgen1{
-        width: 250px;
+@media only screen and (max-width:485px){
+    .mainwork{
+        .imgen5{
+            display: none;
+        }
     }
+}
 
-    .imgen6{
-        width: 250px;
+@media only screen and (max-width:444px){
+    .mainwork{
+        flex-direction: column;
+        .imgen1{
+            width: 250px;
+            height: 250px;
+        }
+
+        .imgen6{
+            width: 300px;
+            height: 450px;
+        }
+
+        .imgen3{
+            width: 200px;
+            height: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width:360px){
+    .mainwork{
+        .imgen6{
+            width: 250px;
+            height: 400px;
+        }
+        align-content: flex-start;
     }
 }

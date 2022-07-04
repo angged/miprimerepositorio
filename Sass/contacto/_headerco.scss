@@ -31,23 +31,54 @@
 }
 
 @media only screen and (max-width:1100px){
-    .Hco{
+    .Hcont{
         height: 60px;
     }
 }
 
 @media only screen and (max-width:640px){
-    .Hco{
+    .Hcont{
+        padding: 110px;
         nav{
             width: 300px;
+        }
+        .subtitulo4{
+            font-size: 22px
         }
     }
 }
 
-@media only screen  and (max-width:400px){
-    .Hco{
+@media only screen and (max-width:440px){
+    .Hcont{
+        padding-left: 70px;
+        .subtitulo4{
+            font-size: 22px;
+        }
         nav{
             width: 250px;
         }
+    }
+}
+
+
+
+@media only screen and (max-width:390px){
+    .Hcont{
+        nav{
+            width: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width:340px){
+    .Hcont{
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width:310px){
+    .Hcont{
+        padding: 40px;
+        padding-bottom: 120px;
     }
 }
