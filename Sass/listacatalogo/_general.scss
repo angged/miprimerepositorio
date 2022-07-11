@@ -1,0 +1,45 @@
+body{
+    background-color:rgb(255, 224, 145);
+}
+
+.catlist{
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 300px;
+        .parrprox{
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: oblique;
+        }
+        .carpincho{
+            height: 320px;
+            width: 380px;
+        }
+    }
+}
+
+@media only screen and (max-width:418px){
+    .catlist{
+        div{
+            padding-top: 160px;
+            .parrprox{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:382px){
+    .catlist{
+        div{
+            .carpincho{
+                height: 240px;
+                width: 300px;
+            }
+        }
+    }
+}

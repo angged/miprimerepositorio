@@ -11,7 +11,7 @@
     }
 
     nav{
-        width: 529px;
+        width: 505px;
         display: flex;
         float:right;
         justify-content:space-between;
@@ -48,6 +48,13 @@
     }
 }
 
+@media only screen and (max-width:524px){
+    .Hcont{
+        padding-left: 80px;
+        padding-bottom: 140px;
+    }
+}
+
 @media only screen and (max-width:440px){
     .Hcont{
         padding-left: 70px;
@@ -64,6 +71,7 @@
 
 @media only screen and (max-width:390px){
     .Hcont{
+        padding-bottom: 150px;
         nav{
             width: 200px;
         }

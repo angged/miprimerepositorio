@@ -17,20 +17,16 @@
     }
     
     a :hover{
-        color: rgb(184, 171, 171);
+        color: rgb(227, 15, 15);
     }
     
 }
 
 @media only screen and (max-width:548px){
     .footercatalogo{
-        height: 80px;
+        height: auto;
         font-size: 18px;
     }
 }
 
-@media only screen and (max-width:364px){
-    .footercatalogo{
-        height: 80px;
-    }
-}
+

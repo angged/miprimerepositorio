@@ -17,19 +17,19 @@
     }
     
     a :hover{
-        color: rgb(184, 171, 171);
+        color: rgb(227, 15, 15);
     }
-    
 }
 
 @media only screen and (max-width:548px){
     .footercontacto{
-        height: 120px;
+        height: auto;
     }
 }
 
-@media only screen and (max-width: 366px){
+@media only screen and (max-width:400px){
     .footercontacto{
-        height: 170px;
+        font-size: 22px;
     }
 }
+
